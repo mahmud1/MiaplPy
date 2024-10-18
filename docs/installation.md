@@ -20,8 +20,10 @@ mamba env update --name my-existing-env --file conda-env.yml
 #### 3. Install MiaplPy via pip
 ```
 conda activate miaplpy-env
-python -m pip install .
+python -m pip install -e .
 ```
+
+Note: Installing in editable mode with `-e` flag lets you modify the source code and apply updates immediately without moving files to the interpreter directory or needing to reinstall.
 
 #### 4. Install [SNAPHU](https://web.stanford.edu/group/radar/softwareandlinks/sw/snaphu/) 
 ```
